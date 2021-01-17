@@ -22,6 +22,7 @@ class NewPost extends Component {
             })
     }
 
+
     render() {
 
 
