@@ -30,9 +30,9 @@
     text-align: center;
 }
 
-
 .Blog a:hover,
-.Blog a:active{
+.Blog a:active,
+.Blog a.active{
     color: #fa923f;
     background-color: #fff;
 }

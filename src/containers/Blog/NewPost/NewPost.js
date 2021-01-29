@@ -10,6 +10,10 @@ class NewPost extends Component {
         author: 'Max'
     }
 
+    componentDidMount() {
+        // console.log(this.props)
+    }
+
     postDataHandler = () => {
         const data = {
             title: this.state.title,
@@ -18,15 +22,12 @@ class NewPost extends Component {
         }
         axios.post('http://jsonplaceholder.typicode.com/posts', data)
             .then(response => {
-                console.log(response)   
+                console.log(response)
             })
     }
 
 
     render() {
-
-
-
         return (
             <div className="NewPost">
                 <h1>Add a Post</h1>
